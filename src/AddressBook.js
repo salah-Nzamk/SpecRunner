@@ -3,6 +3,9 @@ function AddressBook() {
 }
 
 //write a new function for AddresBook to add the Contact
-AdressBook.prototype.addContact = function(contact) {
+AddressBook.prototype.addContact = function(contact) {
 	this.contacts.push(contact);
+}
+AddressBook.prototype.getContact = function(contactIndex) {
+	return this.contacts[contactIndex];
 }
