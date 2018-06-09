@@ -18,7 +18,7 @@ AddressBook.prototype.deleteContact = function(contactIndex) {
 AddressBook.prototype.getInitialContacts = function (cb) {
     var self = this;
 
-    setTimeout(() => {
+    setTimeout(function(){
         self.initialComplete = true;
         if (cb) {
             return cb;

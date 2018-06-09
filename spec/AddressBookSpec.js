@@ -27,13 +27,13 @@ describe('Async Address Book',function(){
         var addressBook = new AddressBook();
 
         beforeEach(function(done) {
-            addressBook.getInitialContacts(function() {
-                done();
+            addressBook.getInitialContacts(function(done) {
+                //done();
             });
         });
 
         it('should grap initial contacts',function(done){
             expect(addressBook.initialComplete).toBe(true); 
-            done();
+            //done();
     });
 });
